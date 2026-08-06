@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources — BORA</title>
+<meta name="description" content="Free learning hub: Git, Python, R, public databases, epidemiological modelling and writing guides.">
+<meta property="og:title" content="Resources — BORA">
+<meta property="og:description" content="Free learning hub: Git, Python, R, public databases, epidemiological modelling and writing guides.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.borabd.org/resources.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">BORA</span>
+      <span class="brand-text">
+        <span class="brand-name">Bangladesh Open Research Academy</span>
+        <span class="brand-sub">borabd.org</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="researchers.html">Researchers</a></li>
+        <li><a href="projects.html">Our Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Learning hub</span>
+      <h1>Resources</h1>
+      <p class="lede">Everything BORA teaches with is free and openly licensed. If a resource
+      costs money, it does not belong on this page.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="notice" style="margin-bottom:2.2rem">
+        <strong>Curated links, hosted nowhere.</strong> BORA does not re-host copyrighted
+        material. We point to the original sources and add our own Markdown walkthroughs and
+        Colab notebooks on GitHub.
+      </div>
+
+      <div class="grid g2">
+        <div class="card card-accent">
+          <h3>Stage 0 &mdash; Foundations</h3>
+          <ul class="resource-list">
+            <li><span class="rl-tag">Git</span><span>Version control, branching, and pull requests &mdash; the minimum needed to collaborate on an analysis.</span></li>
+            <li><span class="rl-tag">Python</span><span>Syntax, pandas, plotting. Enough to clean a dataset and produce a figure.</span></li>
+            <li><span class="rl-tag">R</span><span>tidyverse, ggplot2, and basic statistical testing.</span></li>
+            <li><span class="rl-tag">Shell</span><span>Navigating a filesystem, piping, and running command-line bioinformatics tools.</span></li>
+            <li><span class="rl-tag">Ethics</span><span>Research integrity, authorship norms, data privacy, plagiarism.</span></li>
+          </ul>
+        </div>
+
+        <div class="card card-accent">
+          <h3>Public data sources</h3>
+          <ul class="resource-list">
+            <li><span class="rl-tag">NCBI</span><span>Sequence Read Archive, GenBank, BioProject, BioSample.</span></li>
+            <li><span class="rl-tag">ENA</span><span>European Nucleotide Archive &mdash; mirrors and complements NCBI.</span></li>
+            <li><span class="rl-tag">OpenAlex</span><span>Open bibliographic graph for literature mining and bibliometrics.</span></li>
+            <li><span class="rl-tag">GISAID</span><span>Viral genomic surveillance data (registration required, free).</span></li>
+            <li><span class="rl-tag">WHO/FAO</span><span>Disease burden, surveillance, and livestock statistics.</span></li>
+            <li><span class="rl-tag">BBS</span><span>Bangladesh Bureau of Statistics &mdash; national production and demographic data.</span></li>
+          </ul>
+        </div>
+
+        <div class="card card-accent">
+          <h3>Analysis toolchain</h3>
+          <ul class="resource-list">
+            <li><span class="rl-tag">Colab</span><span>Free notebook compute for tutorials and light analysis.</span></li>
+            <li><span class="rl-tag">Conda</span><span>Reproducible environments for bioinformatics tooling.</span></li>
+            <li><span class="rl-tag">Nextflow</span><span>Pipeline orchestration for multi-step genomic workflows.</span></li>
+            <li><span class="rl-tag">Nextclade</span><span>Clade assignment and quality control for viral genomes.</span></li>
+            <li><span class="rl-tag">Quarto</span><span>Reproducible reports that mix code, output, and prose.</span></li>
+          </ul>
+        </div>
+
+        <div class="card card-accent">
+          <h3>Writing &amp; publishing</h3>
+          <ul class="resource-list">
+            <li><span class="rl-tag">Structure</span><span>IMRaD, how to write a methods section someone can actually re-run.</span></li>
+            <li><span class="rl-tag">Reporting</span><span>STROBE, PRISMA, ARRIVE &mdash; which checklist applies to which design.</span></li>
+            <li><span class="rl-tag">Refs</span><span>Zotero for reference management; Vancouver and APA styles.</span></li>
+            <li><span class="rl-tag">Preprint</span><span>How to post to a preprint server and why to do it early.</span></li>
+            <li><span class="rl-tag">Journals</span><span>Choosing a legitimate open-access venue and spotting predatory ones.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How the hub is built</span>
+        <h2>Versioned, forkable, alumni-maintained</h2>
+      </div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3>Markdown on GitHub</h3>
+          <p>All learning content lives as versioned Markdown in a public repository. Anyone can
+          read the history, fork it, or open a pull request.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">02</div>
+          <h3>Notebooks for practice</h3>
+          <p>Each module ships with a Colab notebook so students run real code without installing
+          anything or paying for compute.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">03</div>
+          <h3>Alumni keep it current</h3>
+          <p>Stage 5 mentors are expected to fix and extend the modules they were taught with.
+          The curriculum improves with every cohort.</p>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:2rem">
+        <strong>Predatory-journal warning.</strong> Students are taught to check a venue against
+        DOAJ, COPE membership, and indexing before submitting anything. Paying to publish fast is
+        the single most common way early-career researchers waste money and credibility.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">BORA</span>
+        <p class="footer-motto">&ldquo;Zero Funds, Infinite Potential.&rdquo;</p>
+        <p>Bangladesh Open Research Academy &mdash; a volunteer-run, open-access research
+        training academy and research archive.</p>
+      </div>
+      <div>
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="researchers.html">Researchers</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Output</h4>
+        <ul>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get involved</h4>
+        <ul>
+          <li><a href="contact.html#intern-registration">Register as an intern</a></li>
+          <li><a href="contact.html#contact-form">Volunteer as a mentor</a></li>
+          <li><a href="mailto:hello@borabd.org">hello@borabd.org</a></li>
+          <li><a href="https://www.borabd.org">www.borabd.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Bangladesh Open Research Academy. Open access, always.</span>
+      <span>Research for a Better Bangladesh.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
