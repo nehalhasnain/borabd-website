@@ -107,7 +107,6 @@
         panel.scrollIntoView({ block: 'center', behavior: 'smooth' });
       }
     }
-    });
   }
 
   /* --------------------------------------- deep-link into intern section */
