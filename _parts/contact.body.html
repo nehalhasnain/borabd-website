@@ -1,13 +1,8 @@
   <section class="page-hero">
     <div class="wrap">
       <span class="eyebrow">Get in touch</span>
-      <h1>Contact &amp; Intern Registration</h1>
-      <p class="lede">Two routes below: a general contact form for mentors, advisors, partners
-      and press &mdash; and a full intern registration form for students who want to join a
-      cohort.</p>
-      <p style="margin-top:1.1rem">
-        <a class="btn btn-accent btn-lg" href="#intern-registration">Go to intern registration</a>
-      </p>
+      <h1>Contact</h1>
+      <p class="lede">General enquiries for mentors, advisors, partners, and press.</p>
     </div>
   </section>
 
@@ -24,7 +19,7 @@
 
           <div class="contact-line">
             <span class="ci" aria-hidden="true">&#9993;</span>
-            <span><strong>Email</strong><a href="mailto:hello@borabd.org">hello@borabd.org</a></span>
+            <span><strong>Email</strong><a href="mailto:query.bora@gmail.com">query.bora@gmail.com</a></span>
           </div>
           <div class="contact-line">
             <span class="ci" aria-hidden="true">&#127760;</span>
@@ -42,7 +37,7 @@
           </div>
         </div>
 
-        <form class="form-card" data-validate data-form-name="general-contact" novalidate>
+        <form class="form-card" data-validate data-form-name="general-contact" action="mailto:query.bora@gmail.com" method="post" enctype="text/plain" novalidate>
           <div class="form-grid">
             <div class="field">
               <label for="c-name">Full name <span class="req">*</span></label>
@@ -81,187 +76,12 @@
           </div>
           <button class="btn btn-primary btn-lg" type="submit" style="margin-top:1.2rem">Send message</button>
           <div class="form-success">
-            <strong>Message captured.</strong>
-            This demo build has no backend yet, so nothing was sent. The submission was logged to
-            the browser console with the exact field names a backend will receive.
+            <strong>Message ready.</strong>
+            Your email client should open addressed to query.bora@gmail.com with the
+            submitted details. If nothing opens, send the fields manually.
           </div>
         </form>
 
       </div>
-    </div>
-  </section>
-
-  <!-- ================================================ INTERN REGISTRATION -->
-  <section class="section-tint" id="intern-registration">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Students</span>
-        <h2>Intern registration</h2>
-        <p class="lede">Free to apply, free to attend, free forever. Registration takes about
-        five minutes. Read the <a href="internship.html">internship structure</a> first so you
-        know what you are committing to.</p>
-      </div>
-
-      <form class="form-card" data-validate data-form-name="intern-registration" novalidate>
-
-        <h3 style="margin-bottom:1rem">1. About you</h3>
-        <div class="form-grid">
-          <div class="field">
-            <label for="i-name">Full name <span class="req">*</span></label>
-            <input type="text" id="i-name" name="full_name" required autocomplete="name">
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-email">Email <span class="req">*</span></label>
-            <input type="email" id="i-email" name="email" required autocomplete="email">
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-phone">Phone / WhatsApp <span class="req">*</span></label>
-            <input type="tel" id="i-phone" name="phone" required autocomplete="tel" placeholder="+880 1XXX XXXXXX">
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-district">District / City</label>
-            <input type="text" id="i-district" name="district" autocomplete="address-level2">
-            <span class="field-error"></span>
-          </div>
-        </div>
-
-        <h3 style="margin:1.9rem 0 1rem">2. Education</h3>
-        <div class="form-grid">
-          <div class="field">
-            <label for="i-inst">Institution <span class="req">*</span></label>
-            <input type="text" id="i-inst" name="institution" required autocomplete="organization">
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-degree">Degree programme <span class="req">*</span></label>
-            <input type="text" id="i-degree" name="degree_program" required placeholder="e.g. DVM, MBBS, BSc Microbiology">
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-year">Year of study <span class="req">*</span></label>
-            <select id="i-year" name="year_of_study" required>
-              <option value="">Select one</option>
-              <option>1st year</option>
-              <option>2nd year</option>
-              <option>3rd year</option>
-              <option>4th year</option>
-              <option>5th year</option>
-              <option>Master&rsquo;s student</option>
-              <option>PhD student</option>
-              <option>Graduated</option>
-            </select>
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-grad">Expected graduation year</label>
-            <input type="number" id="i-grad" name="graduation_year" min="2020" max="2040" placeholder="2027">
-            <span class="field-error"></span>
-          </div>
-        </div>
-
-        <h3 style="margin:1.9rem 0 1rem">3. Research fit</h3>
-        <div class="form-grid">
-          <div class="field">
-            <label for="i-track">Preferred research track <span class="req">*</span></label>
-            <select id="i-track" name="preferred_track" required>
-              <option value="">Select one</option>
-              <option>One Health &amp; Public Health</option>
-              <option>Infectious Disease Epidemiology</option>
-              <option>AMR &amp; Genomic Surveillance</option>
-              <option>Omics &amp; Bioinformatics</option>
-              <option>Veterinary, Agriculture &amp; Fisheries</option>
-              <option>No preference &mdash; assign me</option>
-            </select>
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-track2">Second choice</label>
-            <select id="i-track2" name="secondary_track">
-              <option value="">Optional</option>
-              <option>One Health &amp; Public Health</option>
-              <option>Infectious Disease Epidemiology</option>
-              <option>AMR &amp; Genomic Surveillance</option>
-              <option>Omics &amp; Bioinformatics</option>
-              <option>Veterinary, Agriculture &amp; Fisheries</option>
-            </select>
-            <span class="field-error"></span>
-          </div>
-          <div class="field full">
-            <label for="i-skills">Technical skills <span class="req">*</span></label>
-            <input type="text" id="i-skills" name="technical_skills" required placeholder="e.g. Python (basic), Excel, none yet">
-            <span class="hint">Be honest. &ldquo;None yet&rdquo; is a valid and common answer &mdash; Stage 0 starts from zero.</span>
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-hours">Weekly hours available <span class="req">*</span></label>
-            <select id="i-hours" name="weekly_hours" required>
-              <option value="">Select one</option>
-              <option>Under 5 hours</option>
-              <option>5&ndash;8 hours</option>
-              <option>8&ndash;12 hours</option>
-              <option>12&ndash;20 hours</option>
-              <option>20+ hours</option>
-            </select>
-            <span class="hint">8&ndash;12 hours is the realistic minimum to clear the gates.</span>
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="i-cv">CV or portfolio link</label>
-            <input type="url" id="i-cv" name="cv_link" placeholder="https://drive.google.com/...">
-            <span class="hint">Google Drive, GitHub, LinkedIn, or ORCID.</span>
-            <span class="field-error"></span>
-          </div>
-          <div class="field full">
-            <label for="i-motivation">Why do you want to join BORA? <span class="req">*</span></label>
-            <textarea id="i-motivation" name="motivation" required minlength="80"
-              placeholder="What you want to work on, what you have tried already, and what you want to have produced twelve weeks from now."></textarea>
-            <span class="hint">At least 80 characters. This is the field mentors actually read.</span>
-            <span class="field-error"></span>
-          </div>
-        </div>
-
-        <h3 style="margin:1.9rem 0 1rem">4. Commitments</h3>
-        <div class="field full">
-          <label class="checkbox-row">
-            <input type="checkbox" name="ack_ethics" required>
-            <span>I have read and accept BORA&rsquo;s <a href="publications.html">authorship and
-            research-integrity policy</a>, including that plagiarism or data fabrication ends
-            participation immediately. <span class="req">*</span></span>
-          </label>
-          <span class="field-error"></span>
-        </div>
-        <div class="field full">
-          <label class="checkbox-row">
-            <input type="checkbox" name="ack_commitment" required>
-            <span>I understand the programme is stage-gated, that advancement is not guaranteed,
-            and that publication depends on peer review. <span class="req">*</span></span>
-          </label>
-          <span class="field-error"></span>
-        </div>
-        <div class="field full">
-          <label class="checkbox-row">
-            <input type="checkbox" name="ack_mentor_pledge">
-            <span>If I publish through BORA, I intend to return as a mentor and train at least two
-            interns myself.</span>
-          </label>
-          <span class="field-error"></span>
-        </div>
-
-        <button class="btn btn-accent btn-lg" type="submit" style="margin-top:1.4rem">Submit registration</button>
-
-        <div class="form-success">
-          <strong>Registration captured.</strong>
-          This demo build has no backend yet, so nothing was submitted or stored. Your entry was
-          logged to the browser console using the exact field names that a Supabase table or
-          Google Form will receive once the backend is wired up.
-        </div>
-      </form>
-
-      <p style="font-size:.85rem;color:var(--ink-500);margin-top:1.2rem">
-        BORA never charges a fee at any stage. If anyone requests payment in our name, it is not us.
-      </p>
     </div>
   </section>

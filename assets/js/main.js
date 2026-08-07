@@ -80,7 +80,6 @@
       });
 
       form.addEventListener('submit', function (e) {
-        e.preventDefault();
         var firstBad = null;
 
         fields.forEach(function (input) {
@@ -90,30 +89,24 @@
         });
 
         if (firstBad) {
+          e.preventDefault();
           firstBad.focus();
           firstBad.scrollIntoView({ block: 'center', behavior: 'smooth' });
           return;
         }
 
-        // No backend yet — collect the payload so it can be wired to
-        // Supabase / Google Forms / Formspree later without renaming fields.
-        var payload = {};
-        new FormData(form).forEach(function (v, k) {
-          if (payload[k] === undefined) payload[k] = v;
-          else if (Array.isArray(payload[k])) payload[k].push(v);
-          else payload[k] = [payload[k], v];
-        });
-        console.info('[BORA] ' + (form.dataset.formName || form.id) + ' submission (demo, not sent):', payload);
-
-        var panel = form.querySelector('.form-success');
-        if (panel) {
-          panel.classList.add('show');
-          panel.setAttribute('role', 'status');
-          panel.scrollIntoView({ block: 'center', behavior: 'smooth' });
-        }
-        form.reset();
-        fields.forEach(function (input) { setError(input, ''); });
+        // Form is valid — submit directly to FormSubmit.co endpoint
       });
+    });
+
+    // Auto-show success panel if redirected back after submission
+    if (window.location.search.indexOf('submitted=true') !== -1) {
+      var panel = document.querySelector('.form-success');
+      if (panel) {
+        panel.classList.add('show');
+        panel.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
     });
   }
 
@@ -122,6 +115,87 @@
     if (window.location.hash === '#intern-registration') {
       var first = document.querySelector('#intern-registration input');
       if (first) window.setTimeout(function () { first.focus({ preventScroll: true }); }, 350);
+    }
+  }
+
+  /* ------------------------------------ interactive animated mentorship tree */
+  function initHeroTree() {
+    var container = document.getElementById('hero-tree');
+    var replayBtn = document.getElementById('replay-tree-btn');
+    var counterEl = document.getElementById('tree-counter');
+    var phaseEl = document.getElementById('tree-phase-text');
+    if (!container) return;
+
+    var step2Lines = container.querySelectorAll('.line-step-2');
+    var step3Lines = container.querySelectorAll('.line-step-3');
+    var step2Nodes = container.querySelectorAll('.node-step-2');
+    var step3Nodes = container.querySelectorAll('.node-step-3');
+    var step4Node = container.querySelector('.node-step-4');
+    var step2Statuses = container.querySelectorAll('.status-step2');
+    var timerIds = [];
+
+    function clearTimers() {
+      timerIds.forEach(function (id) { clearTimeout(id); });
+      timerIds = [];
+    }
+
+    function resetTree() {
+      clearTimers();
+      step2Lines.forEach(function (el) { el.classList.remove('line-active'); });
+      step3Lines.forEach(function (el) { el.classList.remove('line-active'); });
+      step2Nodes.forEach(function (el) { el.classList.remove('active-node'); });
+      step3Nodes.forEach(function (el) { el.classList.remove('active-node'); });
+      if (step4Node) step4Node.classList.remove('active-node');
+      step2Statuses.forEach(function (el) { el.textContent = 'Learns \u2192 Publishes'; });
+      if (counterEl) counterEl.textContent = '1 Researcher';
+      if (phaseEl) phaseEl.textContent = '1 Core Mentor starts the cohort';
+    }
+
+    function runAnimation() {
+      resetTree();
+
+      // Step 2: 1 -> 2 Interns (800ms)
+      timerIds.push(setTimeout(function () {
+        step2Lines.forEach(function (el) { el.classList.add('line-active'); });
+        step2Nodes.forEach(function (el) { el.classList.add('active-node'); });
+        if (counterEl) counterEl.textContent = '3 Researchers';
+        if (phaseEl) phaseEl.textContent = 'Mentor trains 2 interns';
+      }, 800));
+
+      // Step 3: Interns publish & become Mentors -> 4 new Interns (2200ms)
+      timerIds.push(setTimeout(function () {
+        step2Statuses.forEach(function (el) { el.textContent = 'Published! Now Mentors'; });
+        step3Lines.forEach(function (el) { el.classList.add('line-active'); });
+        step3Nodes.forEach(function (el) { el.classList.add('active-node'); });
+        if (counterEl) counterEl.textContent = '7 Researchers';
+        if (phaseEl) phaseEl.textContent = 'Interns publish & become mentors';
+      }, 2200));
+
+      // Step 4: Exponential explosion (3600ms)
+      timerIds.push(setTimeout(function () {
+        if (step4Node) step4Node.classList.add('active-node');
+        if (counterEl) counterEl.textContent = '256+ Researchers';
+        if (phaseEl) phaseEl.textContent = 'Self-sustaining research growth';
+      }, 3600));
+    }
+
+    if (replayBtn) {
+      replayBtn.addEventListener('click', function () {
+        runAnimation();
+      });
+    }
+
+    // Trigger animation when visible
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          runAnimation();
+          observer.disconnect();
+        }
+      }, { threshold: 0.25 });
+      observer.observe(container);
+    } else {
+      runAnimation();
     }
   }
 
@@ -137,6 +211,7 @@
     initActiveLink();
     initForms();
     initHashFocus();
+    initHeroTree();
     initYear();
   });
 })();

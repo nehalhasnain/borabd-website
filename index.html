@@ -18,21 +18,16 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">BORA</span>
-      <span class="brand-text">
-        <span class="brand-name">Bangladesh Open Research Academy</span>
-        <span class="brand-sub">borabd.org</span>
-      </span>
+      <img class="brand-mark" src="assets/images/bora-logo.png" alt="BORA logo" width="120" height="88">
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">&#9776;</button>
     <nav class="site-nav" id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="researchers.html">Researchers</a></li>
         <li><a href="projects.html">Our Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <li><a href="researchers.html">People</a></li>
         <li><a href="internship.html">Internship</a></li>
-        <li><a href="resources.html">Resources</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li class="nav-cta"><a href="contact.html">Contact</a></li>
@@ -47,39 +42,106 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Open-access research academy &middot; Bangladesh</span>
-        <h1>Research does not need money. It needs attention and time.</h1>
-        <p class="tagline">&ldquo;Zero Funds, Infinite Potential.&rdquo;</p>
+        <span class="eyebrow">Bangladesh Open Research Academy</span>
+        <h1>Your first scientific paper starts here.</h1>
+        <p class="tagline">&ldquo;Research starts with questions. It doesn't cost money. It costs time and attention.&rdquo;</p>
         <p class="lede">
-          BORA is a free, volunteer-run research academy that trains Bangladeshi students
-          and early-career scientists to design, run, and publish real research &mdash; using
-          open data, open-source tools, and mentorship that costs the learner nothing.
+          Most students in Bangladesh never get the chance to do research &mdash; not because they can't, but because no one showed them how. BORA changes that with structured, zero-cost peer mentorship: one mentor, two students, and a chain of knowledge that never stops growing.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="contact.html#intern-registration">Join Our Team</a>
-          <a class="btn btn-ghost btn-lg" href="projects.html">See our projects</a>
-        </div>
-        <div class="hero-facts">
-          <div><strong>1&nbsp;&rarr;&nbsp;2</strong><span>Mentorship multiplier</span></div>
-          <div><strong>5</strong><span>Research tracks</span></div>
-          <div><strong>12</strong><span>Weeks per cohort</span></div>
-          <div><strong>&#2547;0</strong><span>Cost to every learner</span></div>
+          <a class="btn btn-primary btn-lg" href="internship.html#intern-registration">Apply for internship</a>
+          <a class="btn btn-ghost btn-lg" href="#borr">Explore BORR &rarr;</a>
         </div>
       </div>
+      <div>
+        <!-- ANIMATED MENTORSHIP TREE -->
+        <div class="hero-tree-container" id="hero-tree">
+          <div class="hero-tree-header">
+            <div class="tree-title-wrap">
+              <span class="tree-badge-live"><span class="pulse-dot"></span> Compounding Model</span>
+            </div>
+            <button class="btn-replay-tree" id="replay-tree-btn" type="button" aria-label="Replay growth animation" title="Replay Animation">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"></path><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+              <span>Replay</span>
+            </button>
+          </div>
 
-      <div class="card card-accent">
-        <span class="eyebrow">The gap we exist to close</span>
-        <h3 style="margin-bottom:.8rem">Thousands graduate. Almost none publish.</h3>
-        <p style="font-size:.95rem">
-          Bangladesh produces thousands of life-science, medical, veterinary and agricultural
-          graduates every year, yet the overwhelming majority never author a single research
-          paper. The barrier is rarely talent &mdash; it is access to equipment, mentorship,
-          journals, and structured training.
-        </p>
-        <p style="font-size:.95rem;margin-bottom:0">
-          Dry-lab research &mdash; genomics, AMR surveillance, disease modelling, meta-analysis
-          &mdash; needs a laptop, an internet connection, and guidance. We supply the guidance.
-        </p>
+          <div class="hero-tree-canvas" id="tree-canvas">
+            <!-- Level 1: Root Mentor -->
+            <div class="tree-level level-1">
+              <div class="tree-card mentor-node active-node" data-step="1">
+                <div class="node-icon">🎓</div>
+                <div class="node-info">
+                  <strong>1 Core Mentor</strong>
+                  <span class="node-status">Publishes &amp; Leads Pod</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Connector SVG Level 1 -> 2 -->
+            <div class="connector-wrap">
+              <svg class="tree-svg" viewBox="0 0 300 32" preserveAspectRatio="none">
+                <path class="tree-line line-step-2" d="M150 0 L75 32" />
+                <path class="tree-line line-step-2" d="M150 0 L225 32" />
+              </svg>
+            </div>
+
+            <!-- Level 2: 2 Interns -->
+            <div class="tree-level level-2">
+              <div class="tree-card intern-node node-step-2" data-step="2">
+                <div class="node-icon">🔬</div>
+                <div class="node-info">
+                  <strong>Intern A</strong>
+                  <span class="node-status status-step2">Learns &rarr; Publishes</span>
+                </div>
+              </div>
+              <div class="tree-card intern-node node-step-2" data-step="2">
+                <div class="node-icon">🧬</div>
+                <div class="node-info">
+                  <strong>Intern B</strong>
+                  <span class="node-status status-step2">Learns &rarr; Publishes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Connector SVG Level 2 -> 3 -->
+            <div class="connector-wrap">
+              <svg class="tree-svg" viewBox="0 0 300 32" preserveAspectRatio="none">
+                <path class="tree-line line-step-3" d="M75 0 L45 32" />
+                <path class="tree-line line-step-3" d="M75 0 L105 32" />
+                <path class="tree-line line-step-3" d="M225 0 L195 32" />
+                <path class="tree-line line-step-3" d="M225 0 L255 32" />
+              </svg>
+            </div>
+
+            <!-- Level 3: 4 New Interns (grouped left & right) -->
+            <div class="tree-level level-3">
+              <div class="tree-subgroup left-subgroup">
+                <div class="tree-card-sm node-step-3" data-step="3">Intern A1</div>
+                <div class="tree-card-sm node-step-3" data-step="3">Intern A2</div>
+              </div>
+              <div class="tree-subgroup right-subgroup">
+                <div class="tree-card-sm node-step-3" data-step="3">Intern B1</div>
+                <div class="tree-card-sm node-step-3" data-step="3">Intern B2</div>
+              </div>
+            </div>
+
+            <!-- Level 4 Indicator -->
+            <div class="tree-level level-4 node-step-4">
+              <div class="tree-growth-pill">
+                <strong>8 &rarr; 16 &rarr; 32 &rarr; 64...</strong> Exponential Impact
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-tree-footer">
+            <div class="tree-stat-badge">
+              <span>Impact:</span>
+              <strong id="tree-counter">1 Researcher</strong>
+            </div>
+            <div class="tree-phase-hint" id="tree-phase-text">1 Core Mentor starts the cohort</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -93,23 +155,83 @@
       </div>
       <div class="grid g2">
         <article class="mv-card mission">
-          <div class="icon-chip" aria-hidden="true">&#9873;</div>
           <h3>Mission</h3>
           <blockquote>
-            To elevate Bangladesh&rsquo;s capabilities in biological, medical, and agricultural
-            sciences by providing free, structured, peer-mentored research training to any
-            student with the time and motivation to learn.
+            To democratize scientific discovery in Bangladesh by providing completely free, structured, and project-based research training to undergraduate talent. We pair eager students with experienced mentors to produce high-impact, peer-reviewed science without financial barriers.
           </blockquote>
         </article>
         <article class="mv-card vision" id="vision">
-          <div class="icon-chip" aria-hidden="true">&#10022;</div>
           <h3>Vision</h3>
           <blockquote>
-            To put Bangladesh&rsquo;s name on real, citable, internationally visible scientific
-            output &mdash; produced by a self-sustaining community of volunteer researchers who
-            once had no other route into research.
+            To build Bangladesh's largest, self-sustaining network of open-access researchers. We aim to prove to the global scientific community that world-class research requires curiosity, time, and structured guidance, not massive financial capital.
           </blockquote>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== FOUNDERS MESSAGE -->
+  <section id="founders-message">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Leadership Note</span>
+        <h2>A Message from the Founders</h2>
+        <p class="lede">Research starts with questions. It does not cost money. It costs time and attention.</p>
+      </div>
+      <div class="grid g2">
+        <article class="card card-accent" style="border-left-color: var(--green-700);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <img src="assets/images/people/md-nehal-hasnain.jpg" alt="Md. Nehal Hasnain" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--green-600); flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0 0 0.2rem;">Md. Nehal Hasnain</h3>
+              <span class="tag tag-green">Founder</span>
+            </div>
+          </div>
+          <blockquote style="font-size: 0.95rem; line-height: 1.6; color: var(--ink-700); font-style: italic;">
+            &ldquo;Scientific potential is evenly distributed, but opportunity is not. Across Bangladesh, thousands of brilliant students complete their degrees without ever formulating a research hypothesis or analyzing a real dataset. They are often told that meaningful research requires expensive laboratories and heavy funding. We founded BORA to break that myth. High-impact scientific inquiry begins with curiosity, open data, and rigorous mentorship.&rdquo;
+          </blockquote>
+        </article>
+
+        <article class="card card-accent" style="border-left-color: var(--green-700);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <img src="assets/images/people/rehan-hasnain.jpg" alt="Rehan Hasnain" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--green-600); flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0 0 0.2rem;">Rehan Hasnain</h3>
+              <span class="tag tag-green">Founder</span>
+            </div>
+          </div>
+          <blockquote style="font-size: 0.95rem; line-height: 1.6; color: var(--ink-700); font-style: italic;">
+            &ldquo;True scientific progress occurs when tools, datasets, and knowledge are shared openly without paywalls or financial barriers. BORA is built on a non-negotiable principle: research education must remain completely free to every learner forever. By connecting motivated students directly with active mentors and peer-driven research pods, we let effort and dedication decide who gets to do science.&rdquo;
+          </blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ BORR REPOSITORY -->
+  <section id="borr" class="section-tint">
+    <div class="wrap">
+      <div class="borr-box-card">
+        <div class="borr-box-header">
+          <div>
+            <span class="hero-repo-eyebrow">Open Research Index</span>
+            <h2>Bangladesh Open Research Repository <strong>(BORR)</strong></h2>
+            <p class="lede">
+              A searchable metadata index making Bangladeshi research globally discoverable. Links every record directly to its original publisher.
+            </p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="https://www.borabd.org" target="_blank" rel="noopener noreferrer">Explore BORR &rarr;</a>
+        </div>
+        <div class="borr-features-grid">
+          <div class="borr-feat-item">
+            <h4>Metadata Index</h4>
+            <p>Aggregates publication records for Bangladeshi research.</p>
+          </div>
+          <div class="borr-feat-item">
+            <h4>Open Access</h4>
+            <p>Free platform to showcase national scientific output.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -148,41 +270,6 @@
     </div>
   </section>
 
-  <!-- ==================================================== MENTORSHIP TREE -->
-  <section id="mentorship-tree">
-    <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">The engine</span>
-        <h2>The Mentorship Tree &mdash; a 1-to-2 model</h2>
-        <p class="lede">
-          Every researcher who joins BORA agrees to one condition: train at least two
-          undergraduate interns, free of charge. When those interns publish their first
-          collaborative work, they become mentors and take on two of their own. Teaching
-          capacity compounds instead of running out.
-        </p>
-      </div>
-
-      <div class="tree" role="img" aria-label="Diagram: one mentor trains two interns; each of those interns later trains two more, and so on.">
-        <div class="tree-row"><span class="tree-node">1 Core Mentor</span></div>
-        <div class="tree-arrow" aria-hidden="true">&#8595;</div>
-        <div class="tree-row">
-          <span class="tree-node gen2">Intern</span>
-          <span class="tree-node gen2">Intern</span>
-        </div>
-        <div class="tree-arrow" aria-hidden="true">&#8595;</div>
-        <div class="tree-row">
-          <span class="tree-node gen3">Intern</span>
-          <span class="tree-node gen3">Intern</span>
-          <span class="tree-node gen3">Intern</span>
-          <span class="tree-node gen3">Intern</span>
-        </div>
-        <p style="font-size:.86rem;color:var(--ink-500);margin:.8rem 0 0">
-          Publish &rarr; mentor &rarr; publish. One mentor becomes a network.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- ====================================================== FOCUS TRACKS -->
   <section class="section-tint" id="tracks">
     <div class="wrap">
@@ -190,42 +277,35 @@
         <span class="eyebrow">What we work on</span>
         <h2>Five research tracks</h2>
         <p class="lede">
-          Deliberately narrow and deliberately local &mdash; the fields where Bangladesh
-          generates real genomic and public-health data but has almost no local computational
-          capacity to analyse it.
+          The fields where Bangladesh generates real public-health and genomic data but has
+          almost no local computational capacity to act on it.
         </p>
       </div>
       <div class="grid g3">
         <article class="card card-hover">
           <h3>One Health &amp; Public Health</h3>
           <p>Human&ndash;animal&ndash;environment health intersections.</p>
-          <ul class="tags"><li class="tag">Spillover risk mapping</li><li class="tag">Outbreak reconstruction</li></ul>
         </article>
         <article class="card card-hover">
           <h3>Infectious Disease Epidemiology</h3>
           <p>Surveillance, statistics, and mathematical modelling.</p>
-          <ul class="tags"><li class="tag">Trend modelling</li><li class="tag">R&#8320; estimation</li></ul>
         </article>
         <article class="card card-hover">
           <h3>AMR &amp; Genomic Surveillance</h3>
           <p>Resistance patterns from public genomic repositories.</p>
-          <ul class="tags"><li class="tag">WGS of AMR isolates</li><li class="tag">Resistome mapping</li></ul>
         </article>
         <article class="card card-hover">
           <h3>Omics &amp; Bioinformatics</h3>
           <p>Genomics, transcriptomics, computational biology.</p>
-          <ul class="tags"><li class="tag">RNA-seq reanalysis</li><li class="tag">Variant calling</li></ul>
         </article>
         <article class="card card-hover">
           <h3>Veterinary, Agriculture &amp; Fisheries</h3>
           <p>Food security and animal health through data.</p>
-          <ul class="tags"><li class="tag">Disease-burden mapping</li><li class="tag">Production&ndash;export gaps</li></ul>
         </article>
-        <article class="card card-hover" style="background:var(--green-050);border-color:var(--green-100)">
+        <article class="card card-hover">
           <h3>Propose your own</h3>
-          <p>Have a question that fits Bangladesh&rsquo;s open data and needs no wet lab?
-          Bring it &mdash; mentors are matched to problems, not just to tracks.</p>
-          <p style="margin-bottom:0"><a href="contact.html">Pitch a project &rarr;</a></p>
+          <p>Bring a question. If it runs on open data and survives moderator review, it becomes
+          a cohort project. <a href="contact.html">Pitch it &rarr;</a></p>
         </article>
       </div>
     </div>
@@ -244,25 +324,6 @@
         <div class="stat"><strong>3&ndash;5</strong><span>Preprints or papers</span></div>
         <div class="stat"><strong>12</strong><span>Core mentors leading groups</span></div>
       </div>
-      <p style="margin-top:1.4rem;font-size:.88rem;color:#9dc4b1">
-        Targets from the BORA Academy Proposal, Section 9. Progress will be published openly
-        on this site as each cohort completes.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================================= CTA -->
-  <section>
-    <div class="wrap">
-      <div class="callout">
-        <h2>Ready to do real research?</h2>
-        <p>Applications for the pilot cohort open through the registration form. No fee,
-        no entrance exam &mdash; just a laptop, an internet connection, and consistent hours.</p>
-        <div class="hero-actions">
-          <a class="btn btn-light btn-lg" href="contact.html#intern-registration">Join Our Team</a>
-          <a class="btn btn-accent btn-lg" href="internship.html">How the internship works</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -272,18 +333,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">BORA</span>
-        <p class="footer-motto">&ldquo;Zero Funds, Infinite Potential.&rdquo;</p>
+        <img class="brand-mark footer-logo" src="assets/images/bora-logo-footer.png" alt="BORA logo" width="150" height="115">
         <p>Bangladesh Open Research Academy &mdash; a volunteer-run, open-access research
         training academy and research archive.</p>
       </div>
       <div>
         <h4>Academy</h4>
         <ul>
-          <li><a href="researchers.html">Researchers</a></li>
           <li><a href="projects.html">Our Projects</a></li>
           <li><a href="internship.html">Internship</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html#publication-authorship-policy">Publication &amp; Authorship Policy</a></li>
         </ul>
       </div>
       <div>
@@ -292,21 +352,21 @@
           <li><a href="publications.html">Publications</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Get involved</h4>
         <ul>
-          <li><a href="contact.html#intern-registration">Register as an intern</a></li>
+          <li><a href="internship.html#intern-registration">Register as an intern</a></li>
           <li><a href="contact.html#contact-form">Volunteer as a mentor</a></li>
-          <li><a href="mailto:hello@borabd.org">hello@borabd.org</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:query.bora@gmail.com">query.bora@gmail.com</a></li>
           <li><a href="https://www.borabd.org">www.borabd.org</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span data-year>2026</span> Bangladesh Open Research Academy. Open access, always.</span>
+      <span>&copy; <span data-year>2026</span> Bangladesh Open Research Academy.</span>
       <span>Research for a Better Bangladesh.</span>
     </div>
   </div>

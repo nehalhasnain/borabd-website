@@ -18,21 +18,16 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">BORA</span>
-      <span class="brand-text">
-        <span class="brand-name">Bangladesh Open Research Academy</span>
-        <span class="brand-sub">borabd.org</span>
-      </span>
+      <img class="brand-mark" src="assets/images/bora-logo.png" alt="BORA logo" width="120" height="88">
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">&#9776;</button>
     <nav class="site-nav" id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="researchers.html">Researchers</a></li>
         <li><a href="projects.html">Our Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <li><a href="researchers.html">People</a></li>
         <li><a href="internship.html">Internship</a></li>
-        <li><a href="resources.html">Resources</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li class="nav-cta"><a href="contact.html">Contact</a></li>
@@ -55,31 +50,73 @@
   <section>
     <div class="wrap narrow">
       <h2>The problem, and why now</h2>
-      <p>Bangladesh has no shortage of capable science graduates. What it lacks is a structured,
-      affordable bridge between &ldquo;I finished my degree&rdquo; and &ldquo;I have published
-      research.&rdquo; Wet-lab research requires capital most students and young professionals
-      simply do not have. Meanwhile dry-lab, computational, and epidemiological research &mdash;
-      genomics, AMR surveillance, disease modelling, meta-analysis &mdash; requires only a laptop,
-      an internet connection, and guidance.</p>
+      <p>Bangladesh has capable science graduates but lacks a structured, affordable bridge
+      between finishing a degree and publishing research. Wet-lab research needs capital
+      most students do not have. Dry-lab, computational, and epidemiological research
+      &mdash; genomics, AMR surveillance, disease modelling, meta-analysis &mdash; needs only
+      a laptop, an internet connection, and guidance.</p>
 
-      <p>The model is already proven. Remote, project-based, cohort-driven programmes have turned
-      motivated but resource-constrained students across the Global South into published
-      computational scientists, entirely free to the learner, using open datasets, open-source
-      tools, and volunteer mentorship. What is missing is a version scoped to Bangladesh&rsquo;s
+      <p>The model is already proven. Remote, project-based, cohort-driven programmes have
+      turned motivated students across the Global South into published computational
+      scientists, entirely free to the learner, using open datasets, open-source tools,
+      and volunteer mentorship. What is missing is a version scoped to Bangladesh&rsquo;s
       own problems.</p>
 
       <h3>What is missing for Bangladesh specifically</h3>
       <ul>
         <li><strong>Local relevance</strong> &mdash; no existing academy is scoped to Bangladesh&rsquo;s
         One Health, AMR, and agricultural-export data problems.</li>
-        <li><strong>No local archive</strong> &mdash; there is no equivalent open archive to house
-        and showcase locally produced research output.</li>
-        <li><strong>No feedback loop</strong> &mdash; global programmes are highly competitive and
-        are not designed to feed a Bangladesh-specific alumni-mentor pipeline.</li>
-        <li><strong>The window is now</strong> &mdash; a growing pool of English-medium STEM
-        graduates, rising internet penetration, and free AI-assisted learning tools have made
-        self-directed technical training far more achievable than even three years ago.</li>
+        <li><strong>No local archive</strong> &mdash; no equivalent open archive to showcase
+        locally produced research output.</li>
+        <li><strong>No feedback loop</strong> &mdash; global programmes are not designed to
+        feed a Bangladesh-specific alumni-mentor pipeline.</li>
+        <li><strong>The window is now</strong> &mdash; free AI-assisted tools have made
+        self-directed technical training achievable at scale.</li>
       </ul>
+
+      <div class="borr-about-card" style="margin-top: 2rem;">
+        <span class="hero-repo-eyebrow">Open Research Index</span>
+        <h3 style="margin: 0.4rem 0 0.5rem;">Bangladesh Open Research Repository (BORR)</h3>
+        <p>A searchable metadata index making Bangladeshi research globally discoverable while linking every paper back to its original publisher.</p>
+        <a class="btn btn-ghost" href="https://www.borabd.org" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Visit BORR &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="founders-message" style="background: var(--paper-2); padding: 3rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Leadership Note</span>
+        <h2>A Message from the Founders</h2>
+        <p class="lede">Research starts with questions. It does not cost money. It costs time and attention.</p>
+      </div>
+      <div class="grid g2">
+        <article class="card card-accent" style="border-left-color: var(--green-700);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <img src="assets/images/people/md-nehal-hasnain.jpg" alt="Md. Nehal Hasnain" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--green-600); flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0 0 0.2rem;">Md. Nehal Hasnain</h3>
+              <span class="tag tag-green">Founder</span>
+            </div>
+          </div>
+          <blockquote style="font-size: 0.95rem; line-height: 1.6; color: var(--ink-700); font-style: italic;">
+            &ldquo;Scientific potential is evenly distributed, but opportunity is not. Across Bangladesh, thousands of brilliant students complete their degrees without ever formulating a research hypothesis or analyzing a real dataset. They are often told that meaningful research requires expensive laboratories and heavy funding. We founded BORA to break that myth. High-impact scientific inquiry begins with curiosity, open data, and rigorous mentorship.&rdquo;
+          </blockquote>
+        </article>
+
+        <article class="card card-accent" style="border-left-color: var(--green-700);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <img src="assets/images/people/rehan-hasnain.jpg" alt="Rehan Hasnain" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--green-600); flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0 0 0.2rem;">Rehan Hasnain</h3>
+              <span class="tag tag-green">Founder</span>
+            </div>
+          </div>
+          <blockquote style="font-size: 0.95rem; line-height: 1.6; color: var(--ink-700); font-style: italic;">
+            &ldquo;True scientific progress occurs when tools, datasets, and knowledge are shared openly without paywalls or financial barriers. BORA is built on a non-negotiable principle: research education must remain completely free to every learner forever. By connecting motivated students directly with active mentors and peer-driven research pods, we let effort and dedication decide who gets to do science.&rdquo;
+          </blockquote>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -96,11 +133,11 @@
             <tr><th scope="col">Role</th><th scope="col">Who</th><th scope="col">Responsibility</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>Founders</strong></td><td>Nehal Hasnain &amp; Rehan Hasnain</td><td>Set strategic vision, build the platform, define core research agendas, oversee the pipeline.</td></tr>
-            <tr><td><strong>Moderators / Chief Advisors</strong></td><td>2&ndash;5 senior academics</td><td>Validate research ideas, lend academic credibility, set scientific standards, sign off flagship outputs.</td></tr>
-            <tr><td><strong>Core Research Mentors</strong></td><td>~10&ndash;20 scientists</td><td>Each leads one project group and mentors the students within it.</td></tr>
-            <tr><td><strong>Team Leads / Alumni Mentors</strong></td><td>Published alumni</td><td>Return to lead teams &mdash; the engine of the train-the-trainer model.</td></tr>
-            <tr><td><strong>Student Volunteers</strong></td><td>The cohort</td><td>Learn, process data, write drafts, and eventually lead their own dry-lab projects.</td></tr>
+            <tr><td><strong>Founders</strong></td><td>Nehal Hasnain &amp; Rehan Hasnain</td><td>Set vision, build platform, oversee pipeline.</td></tr>
+            <tr><td><strong>Moderators / Chief Advisors</strong></td><td>2&ndash;5 senior academics</td><td>Validate ideas, set standards, sign off outputs.</td></tr>
+            <tr><td><strong>Researchers</strong></td><td>~10&ndash;20 scientists</td><td>Lead project groups and mentor students.</td></tr>
+            <tr><td><strong>Team Leads / Alumni Mentors</strong></td><td>Published alumni</td><td>Return to lead teams.</td></tr>
+            <tr><td><strong>Student Volunteers</strong></td><td>The cohort</td><td>Learn, process data, write drafts.</td></tr>
           </tbody>
         </table>
       </div>
@@ -111,32 +148,24 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Roadmap</span>
-        <h2>Twelve months, four phases</h2>
+        <h2>Three moves</h2>
       </div>
-      <div class="grid g4">
+      <div class="grid g3">
         <article class="card card-accent">
           <span class="badge">Months 0&ndash;3</span>
           <h3 style="margin-top:.7rem">Foundation</h3>
-          <p>Domain secured; website MVP built; two chief advisors and initial core mentors
-          recruited; curriculum and authorship policy finalised.</p>
+          <p>Domain secured; website MVP built; advisors and mentors recruited; curriculum
+          and authorship policy finalised.</p>
         </article>
         <article class="card card-accent">
           <span class="badge">Months 3&ndash;6</span>
           <h3 style="margin-top:.7rem">Pilot cohort</h3>
-          <p>First cohort of 20&ndash;30 students on a single track; run the full Stage 0&ndash;3
-          gate end to end.</p>
-        </article>
-        <article class="card card-accent">
-          <span class="badge">Months 6&ndash;12</span>
-          <h3 style="margin-top:.7rem">Scale</h3>
-          <p>Open additional tracks; grow the mentor base via train-the-trainer; produce first
-          publications; hold the first virtual symposium.</p>
+          <p>First cohort on one track; run Stage 0&ndash;3 end to end.</p>
         </article>
         <article class="card card-accent">
           <span class="badge">Year 2+</span>
           <h3 style="margin-top:.7rem">Institutionalise</h3>
-          <p>Pursue university MoUs; launch a talent-placement page; seek light sponsorships;
-          build national visibility.</p>
+          <p>Open additional tracks; produce first publications; build national visibility.</p>
         </article>
       </div>
     </div>
@@ -149,30 +178,83 @@
           <h2>Zero-cost sustainability</h2>
           <ul>
             <li><strong>Train-the-trainer</strong> &mdash; no paid teaching staff; published alumni
-            supply the next cohort&rsquo;s mentorship capacity.</li>
+            supply mentorship capacity.</li>
             <li><strong>Free-tier infrastructure</strong> &mdash; hosting, backend, and learning
-            content run on free tiers indefinitely.</li>
+            content run on free tiers.</li>
             <li><strong>In-kind participation</strong> &mdash; advisors and mentors are compensated
             in credit, authorship, and visibility rather than salary.</li>
-            <li><strong>Optional later revenue</strong> &mdash; once credibility is established, a
-            talent-placement page and light institutional sponsorship can cover the domain and
-            occasional prizes, without ever charging students.</li>
           </ul>
         </div>
         <div>
           <h2>Risks we take seriously</h2>
           <ul>
-            <li><strong>Volunteer burnout</strong> &mdash; the stage-gate filters for genuine
-            motivation early and distributes mentorship load.</li>
+            <li><strong>Volunteer burnout</strong> &mdash; stage-gate filters for genuine
+            motivation early.</li>
             <li><strong>Quality control</strong> &mdash; mandatory mentor sign-off plus plagiarism
             and data-integrity screening before submission.</li>
-            <li><strong>Credibility</strong> &mdash; start with preprints and workshop
-            presentations; lean on advisors&rsquo; institutional standing for early legitimacy.</li>
-            <li><strong>Authorship disputes</strong> &mdash; the policy is pre-agreed and
-            communicated at Stage 0.</li>
             <li><strong>Ethics</strong> &mdash; open or properly de-identified data only, with an
             ethics checklist for any human-health project.</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tint" id="publication-authorship-policy">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Non-negotiable</span>
+        <h2>Publication &amp; authorship policy</h2>
+        <p class="lede">BORA&rsquo;s output is real research produced largely by students. A clear
+        authorship and integrity policy is what makes journals, universities, and admissions
+        committees take that output seriously.</p>
+      </div>
+
+      <div class="grid g2">
+        <article class="card card-accent">
+          <h3>Authorship order</h3>
+          <p>Students who perform the core analysis and writing are listed as first authors.
+          Core mentors and chief advisors are listed as senior or corresponding authors,
+          reflecting supervisory contribution. Order is agreed at Stage 0, not argued at
+          submission.</p>
+        </article>
+        <article class="card card-accent">
+          <h3>Review gate</h3>
+          <p>Every manuscript requires sign-off from its supervising core mentor. Flagship
+          outputs additionally require a chief advisor&rsquo;s sign-off before any external
+          submission.</p>
+        </article>
+        <article class="card card-accent">
+          <h3>Data &amp; ethics</h3>
+          <p>All analyses run on open or properly de-identified public data. A lightweight ethics
+          checklist applies to any project touching human health records.</p>
+        </article>
+        <article class="card card-accent">
+          <h3>Integrity checks</h3>
+          <p>Plagiarism screening and data-integrity verification are mandatory before any
+          Stage 4 submission. No exceptions, including for mentor-led work.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="grid g3">
+        <div class="card">
+          <h3>Reproducibility requirement</h3>
+          <p>Every published analysis ships with its code in a public GitHub repository and a
+          documented environment. If it cannot be re-run, it does not go out under the BORA name.</p>
+        </div>
+        <div class="card">
+          <h3>Preprint first</h3>
+          <p>We submit to a preprint server before or alongside journal submission, so the work is
+          citable and visible immediately at zero cost.</p>
+        </div>
+        <div class="card">
+          <h3>Open by default</h3>
+          <p>Where a journal offers a free open-access route, we take it. We do not pay article
+          processing charges we cannot fund.</p>
         </div>
       </div>
     </div>
@@ -188,9 +270,6 @@
         to put in the work. Every piece of this model has already been proven at global scale.
         Our task is to point it at Bangladesh&rsquo;s own problems.
       </p>
-      <p style="margin-top:1.6rem">
-        <a class="btn btn-primary btn-lg" href="contact.html#intern-registration">Join Our Team</a>
-      </p>
     </div>
   </section>
 </main>
@@ -199,18 +278,16 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">BORA</span>
-        <p class="footer-motto">&ldquo;Zero Funds, Infinite Potential.&rdquo;</p>
-        <p>Bangladesh Open Research Academy &mdash; a volunteer-run, open-access research
-        training academy and research archive.</p>
+        <img class="brand-mark footer-logo" src="assets/images/bora-logo-footer.png" alt="BORA logo" width="150" height="115">
+        <p>A volunteer-run, open-access research training academy and research archive.</p>
       </div>
       <div>
         <h4>Academy</h4>
         <ul>
-          <li><a href="researchers.html">Researchers</a></li>
           <li><a href="projects.html">Our Projects</a></li>
           <li><a href="internship.html">Internship</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html#publication-authorship-policy">Publication &amp; Authorship Policy</a></li>
         </ul>
       </div>
       <div>
@@ -219,21 +296,21 @@
           <li><a href="publications.html">Publications</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Get involved</h4>
         <ul>
-          <li><a href="contact.html#intern-registration">Register as an intern</a></li>
+          <li><a href="internship.html#intern-registration">Register as an intern</a></li>
           <li><a href="contact.html#contact-form">Volunteer as a mentor</a></li>
-          <li><a href="mailto:hello@borabd.org">hello@borabd.org</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:query.bora@gmail.com">query.bora@gmail.com</a></li>
           <li><a href="https://www.borabd.org">www.borabd.org</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span data-year>2026</span> Bangladesh Open Research Academy. Open access, always.</span>
+      <span>&copy; <span data-year>2026</span> Bangladesh Open Research Academy.</span>
       <span>Research for a Better Bangladesh.</span>
     </div>
   </div>

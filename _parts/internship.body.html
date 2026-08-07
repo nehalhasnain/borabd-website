@@ -6,7 +6,7 @@
       remote, project-based, and ending in a real manuscript &mdash; not a certificate of
       attendance.</p>
       <p style="margin-top:1.2rem">
-        <a class="btn btn-primary btn-lg" href="contact.html#intern-registration">Register as an intern</a>
+        <a class="btn btn-primary btn-lg" href="#intern-registration">Register as an intern</a>
       </p>
     </div>
   </section>
@@ -25,36 +25,31 @@
         <li>
           <span class="stage-label">Stage 0 &middot; Week 0</span>
           <h3>Onboarding</h3>
-          <p>Self-paced Learning Hub modules: Git and GitHub, Python or R basics, mining NCBI,
-          OpenAlex and other public repositories, plus research ethics and authorship norms.</p>
+          <p>Self-paced modules: Git/GitHub, Python or R basics, public databases, plus research ethics.</p>
           <p><strong>Gate:</strong> onboarding quiz and a working local environment.</p>
         </li>
         <li>
           <span class="stage-label">Stage 1 &middot; Weeks 1&ndash;2</span>
           <h3>Foundations Challenge</h3>
-          <p>Small individual tasks: a data-cleaning script, a literature-mining exercise, a
-          public-dataset query. Everyone does the same tasks; effort is visible.</p>
-          <p><strong>Gate:</strong> only qualifying students are promoted to Stage 2.</p>
+          <p>Small individual tasks: data cleaning, literature mining, public dataset querying.</p>
+          <p><strong>Gate:</strong> qualifying students are promoted to Stage 2.</p>
         </li>
         <li>
           <span class="stage-label">Stage 2 &middot; Weeks 3&ndash;5</span>
           <h3>Team Formation &amp; Applied Analysis</h3>
-          <p>Assigned teams of four to five tackle an applied problem under a core mentor &mdash;
-          for example the AMR Genomic Analysis Group.</p>
+          <p>Teams of four to five tackle an applied problem under a core mentor.</p>
           <p><strong>Gate:</strong> a documented, reproducible analysis published to GitHub.</p>
         </li>
         <li>
           <span class="stage-label">Stage 3 &middot; Weeks 6&ndash;10</span>
           <h3>Capstone Research Project</h3>
-          <p>Teams narrow to one original research question and draft a manuscript with mentor
-          and advisor supervision.</p>
+          <p>Teams narrow to one original question and draft a manuscript with mentor and advisor supervision.</p>
           <p><strong>Gate:</strong> the manuscript draft passes internal review.</p>
         </li>
         <li>
           <span class="stage-label">Stage 4 &middot; Weeks 11&ndash;12+</span>
           <h3>Publish &amp; Present</h3>
-          <p>Submission to a preprint server or journal, and presentation at a BORA virtual
-          symposium.</p>
+          <p>Submission to a preprint server or journal, and presentation at a BORA virtual symposium.</p>
           <p><strong>Gate:</strong> preprint or publication housed in the BORA archive.</p>
         </li>
         <li>
@@ -80,28 +75,10 @@
           </ul>
         </div>
         <div class="card">
-          <h3>What you need</h3>
-          <ul style="padding-left:1.1rem;margin:0">
-            <li>A laptop and a stable internet connection</li>
-            <li>Working English reading and writing</li>
-            <li>Roughly 8&ndash;12 hours per week</li>
-            <li>Willingness to be evaluated and to be told when work is not good enough</li>
-          </ul>
-        </div>
-        <div class="card">
           <h3>What it costs</h3>
           <p style="font-size:1.4rem;font-weight:800;color:var(--green-900);margin:0 0 .4rem">&#2547;0</p>
           <p style="margin:0">No application fee, no tuition, no certificate fee, no hidden
           charges. If anyone asks you to pay for BORA, it is not BORA.</p>
-        </div>
-        <div class="card">
-          <h3>What you get</h3>
-          <ul style="padding-left:1.1rem;margin:0">
-            <li>Structured mentorship from an active researcher</li>
-            <li>A public GitHub portfolio of real analyses</li>
-            <li>Authorship on any manuscript you materially contribute to</li>
-            <li>A route to become a mentor yourself</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -132,17 +109,6 @@
           honest about that than sell a guarantee nobody can keep.</p>
         </details>
         <details>
-          <summary>Is this remote?</summary>
-          <p>Yes, entirely. All tracks are computational and run on public data, so participation
-          does not depend on which institution you belong to or where you live.</p>
-        </details>
-        <details>
-          <summary>How is authorship decided?</summary>
-          <p>Students who do the core analysis and writing are first authors; mentors and
-          advisors take senior or corresponding positions. The policy is fixed at Stage 0 so
-          nobody negotiates it at submission time.</p>
-        </details>
-        <details>
           <summary>What if I drop out midway?</summary>
           <p>Tell your mentor. Attrition is normal and honest withdrawal is far better than a
           silent disappearance that strands your team. You can reapply to a later cohort.</p>
@@ -153,8 +119,184 @@
         <h2>Applications for the pilot cohort</h2>
         <p>Start with one well-scoped track so we can test the full pipeline end to end.</p>
         <div class="hero-actions">
-          <a class="btn btn-light btn-lg" href="contact.html#intern-registration">Register now</a>
+          <a class="btn btn-light btn-lg" href="#intern-registration">Register now</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section-tint" id="intern-registration">
+    <div class="wrap narrow">
+      <div class="section-head">
+        <span class="eyebrow">Students</span>
+        <h2>Intern registration</h2>
+        <p class="lede">Free to apply, free to attend, free forever. Registration takes about
+        five minutes.</p>
+      </div>
+
+      <form class="form-card" data-validate data-form-name="intern-registration" action="https://formsubmit.co/query.bora@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New BORA Intern Application">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <h3 style="margin-bottom:1rem">1. About you</h3>
+        <div class="form-grid">
+          <div class="field">
+            <label for="i-name">Full name <span class="req">*</span></label>
+            <input type="text" id="i-name" name="full_name" required autocomplete="name">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-email">Email <span class="req">*</span></label>
+            <input type="email" id="i-email" name="email" required autocomplete="email">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-phone">Phone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="i-phone" name="phone" required autocomplete="tel" placeholder="+880 1XXX XXXXXX">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-district">District / City</label>
+            <input type="text" id="i-district" name="district" autocomplete="address-level2">
+            <span class="field-error"></span>
+          </div>
+        </div>
+
+        <h3 style="margin:1.9rem 0 1rem">2. Education</h3>
+        <div class="form-grid">
+          <div class="field">
+            <label for="i-inst">Institution <span class="req">*</span></label>
+            <input type="text" id="i-inst" name="institution" required autocomplete="organization">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-degree">Degree programme <span class="req">*</span></label>
+            <input type="text" id="i-degree" name="degree_program" required placeholder="e.g. DVM, MBBS, BSc Microbiology">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-year">Year of study <span class="req">*</span></label>
+            <select id="i-year" name="year_of_study" required>
+              <option value="">Select one</option>
+              <option>1st year</option>
+              <option>2nd year</option>
+              <option>3rd year</option>
+              <option>4th year</option>
+              <option>5th year</option>
+              <option>Master&rsquo;s student</option>
+              <option>PhD student</option>
+              <option>Graduated</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-grad">Expected graduation year</label>
+            <input type="number" id="i-grad" name="graduation_year" min="2020" max="2040" placeholder="2027">
+            <span class="field-error"></span>
+          </div>
+        </div>
+
+        <h3 style="margin:1.9rem 0 1rem">3. Research fit</h3>
+        <div class="form-grid">
+          <div class="field">
+            <label for="i-track">Preferred research track <span class="req">*</span></label>
+            <select id="i-track" name="preferred_track" required>
+              <option value="">Select one</option>
+              <option>One Health &amp; Public Health</option>
+              <option>Infectious Disease Epidemiology</option>
+              <option>AMR &amp; Genomic Surveillance</option>
+              <option>Omics &amp; Bioinformatics</option>
+              <option>Veterinary, Agriculture &amp; Fisheries</option>
+              <option>No preference &mdash; assign me</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-track2">Second choice</label>
+            <select id="i-track2" name="secondary_track">
+              <option value="">Optional</option>
+              <option>One Health &amp; Public Health</option>
+              <option>Infectious Disease Epidemiology</option>
+              <option>AMR &amp; Genomic Surveillance</option>
+              <option>Omics &amp; Bioinformatics</option>
+              <option>Veterinary, Agriculture &amp; Fisheries</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field full">
+            <label for="i-skills">Technical skills <span class="req">*</span></label>
+            <input type="text" id="i-skills" name="technical_skills" required placeholder="e.g. Python (basic), Excel, none yet">
+            <span class="hint">Be honest. &ldquo;None yet&rdquo; is a valid and common answer &mdash; Stage 0 starts from zero.</span>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-hours">Weekly hours available <span class="req">*</span></label>
+            <select id="i-hours" name="weekly_hours" required>
+              <option value="">Select one</option>
+              <option>Under 5 hours</option>
+              <option>5&ndash;8 hours</option>
+              <option>8&ndash;12 hours</option>
+              <option>12&ndash;20 hours</option>
+              <option>20+ hours</option>
+            </select>
+            <span class="hint">8&ndash;12 hours is the realistic minimum to clear the gates.</span>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="i-cv">CV or portfolio link</label>
+            <input type="url" id="i-cv" name="cv_link" placeholder="https://drive.google.com/...">
+            <span class="hint">Google Drive, GitHub, LinkedIn, or ORCID.</span>
+            <span class="field-error"></span>
+          </div>
+          <div class="field full">
+            <label for="i-motivation">Why do you want to join BORA? <span class="req">*</span></label>
+            <textarea id="i-motivation" name="motivation" required minlength="80"
+              placeholder="What you want to work on, what you have tried already, and what you want to have produced twelve weeks from now."></textarea>
+            <span class="hint">At least 80 characters. This is the field mentors actually read.</span>
+            <span class="field-error"></span>
+          </div>
+        </div>
+
+        <h3 style="margin:1.9rem 0 1rem">4. Commitments</h3>
+        <div class="field full">
+          <label class="checkbox-row">
+            <input type="checkbox" name="ack_ethics" required>
+            <span>I have read and accept BORA&rsquo;s <a href="publications.html">authorship and
+            research-integrity policy</a>, including that plagiarism or data fabrication ends
+            participation immediately. <span class="req">*</span></span>
+          </label>
+          <span class="field-error"></span>
+        </div>
+        <div class="field full">
+          <label class="checkbox-row">
+            <input type="checkbox" name="ack_commitment" required>
+            <span>I understand the programme is stage-gated, that advancement is not guaranteed,
+            and that publication depends on peer review. <span class="req">*</span></span>
+          </label>
+          <span class="field-error"></span>
+        </div>
+        <div class="field full">
+          <label class="checkbox-row">
+            <input type="checkbox" name="ack_mentor_pledge">
+            <span>If I publish through BORA, I intend to return as a mentor and train at least two
+            interns myself.</span>
+          </label>
+          <span class="field-error"></span>
+        </div>
+
+        <button class="btn btn-accent btn-lg" type="submit" style="margin-top:1.4rem">Submit registration</button>
+
+        <div class="form-success">
+          <strong>Registration captured.</strong>
+          This demo build has no backend yet, so nothing was submitted or stored. Your entry was
+          logged to the browser console using the exact field names that a Supabase table or
+          Google Form will receive once the backend is wired up.
+        </div>
+      </form>
+
+      <p style="font-size:.85rem;color:var(--ink-500);margin-top:1.2rem">
+        BORA never charges a fee at any stage. If anyone requests payment in our name, it is not us.
+      </p>
     </div>
   </section>
