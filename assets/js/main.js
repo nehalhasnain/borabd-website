@@ -133,6 +133,7 @@
     var step4Node = container.querySelector('.node-step-4');
     var step2Statuses = container.querySelectorAll('.status-step2');
     var timerIds = [];
+    var isLooping = true;
 
     function clearTimers() {
       timerIds.forEach(function (id) { clearTimeout(id); });
@@ -148,55 +149,52 @@
       if (step4Node) step4Node.classList.remove('active-node');
       step2Statuses.forEach(function (el) { el.textContent = 'Learns \u2192 Publishes'; });
       if (counterEl) counterEl.textContent = '1 Researcher';
-      if (phaseEl) phaseEl.textContent = '1 Core Mentor starts the cohort';
+      if (phaseEl) phaseEl.textContent = '1 Mentor starts the cohort';
     }
 
-    function runAnimation() {
+    function runAnimationCycle() {
       resetTree();
 
-      // Step 2: 1 -> 2 Interns (800ms)
+      // Step 2: 1 Mentor -> 2 Interns (1000ms)
       timerIds.push(setTimeout(function () {
         step2Lines.forEach(function (el) { el.classList.add('line-active'); });
         step2Nodes.forEach(function (el) { el.classList.add('active-node'); });
         if (counterEl) counterEl.textContent = '3 Researchers';
-        if (phaseEl) phaseEl.textContent = 'Mentor trains 2 interns';
-      }, 800));
+        if (phaseEl) phaseEl.textContent = '1 Mentor trains 2 interns';
+      }, 1000));
 
-      // Step 3: Interns publish & become Mentors -> 4 new Interns (2200ms)
+      // Step 3: Interns publish & become Mentors -> 4 new Interns (2500ms)
       timerIds.push(setTimeout(function () {
         step2Statuses.forEach(function (el) { el.textContent = 'Published! Now Mentors'; });
         step3Lines.forEach(function (el) { el.classList.add('line-active'); });
         step3Nodes.forEach(function (el) { el.classList.add('active-node'); });
         if (counterEl) counterEl.textContent = '7 Researchers';
-        if (phaseEl) phaseEl.textContent = 'Interns publish & become mentors';
-      }, 2200));
+        if (phaseEl) phaseEl.textContent = 'Interns publish & return as mentors';
+      }, 2500));
 
-      // Step 4: Exponential explosion (3600ms)
+      // Step 4: Exponential explosion (4000ms)
       timerIds.push(setTimeout(function () {
         if (step4Node) step4Node.classList.add('active-node');
         if (counterEl) counterEl.textContent = '256+ Researchers';
-        if (phaseEl) phaseEl.textContent = 'Self-sustaining research growth';
-      }, 3600));
+        if (phaseEl) phaseEl.textContent = 'Exponential self-sustaining growth';
+      }, 4000));
+
+      // Schedule next continuous cycle (7500ms)
+      timerIds.push(setTimeout(function () {
+        if (isLooping) {
+          runAnimationCycle();
+        }
+      }, 7500));
     }
 
     if (replayBtn) {
       replayBtn.addEventListener('click', function () {
-        runAnimation();
+        isLooping = true;
+        runAnimationCycle();
       });
     }
 
-    // Trigger animation when visible
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) {
-          runAnimation();
-          observer.disconnect();
-        }
-      }, { threshold: 0.25 });
-      observer.observe(container);
-    } else {
-      runAnimation();
-    }
+    runAnimationCycle();
   }
 
   /* ------------------------------------------------ current year in footer */
