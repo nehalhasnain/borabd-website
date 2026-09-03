@@ -3,7 +3,7 @@
 *In Jurain, a father counts his daughter's dengue infections. The virus is moving faster than the labs tracking it.*
 
 **By Md. Nehal Hasnain**  
-*Founder, Bangladesh Open Research Academy* | Find him at: [nehal.has9@gmail.com](mailto:nehal.has9@gmail.com)
+*Founder, Bangladesh Open Research Academy (BORA) and Bangladesh Open Research Repository (BORR)* | Find him at: [nehal.has9@gmail.com](mailto:nehal.has9@gmail.com)
 
 ![A schoolgirl navigating waterlogged brick pathways in Jurain, Dhaka amidst standing water and mosquito breeding conditions](./bangladesh-dengue-jurain.jpg)
 
